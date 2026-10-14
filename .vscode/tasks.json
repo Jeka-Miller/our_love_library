@@ -1,0 +1,55 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "编译图书馆程序",
+      "type": "process",
+      "command": "gcc",
+      "args": [
+        "-std=c11",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Wshadow",
+        "-Wformat=2",
+        "main.c",
+        "book.c",
+        "user.c",
+        "loan.c",
+        "utils.c",
+        "-o",
+        "library.exe",
+        "-lwinmm"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "一键编译并运行",
+      "type": "shell",
+      "command": "${workspaceFolder}/build.bat",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    }
+  ]
+}
