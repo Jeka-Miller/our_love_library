@@ -21,10 +21,11 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/library/library_lovestory-main",
-      "program": "e:/library/library_lovestory-main/build/Debug/outDebug",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/library.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
+      "preLaunchTask": "编译图书馆程序",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
