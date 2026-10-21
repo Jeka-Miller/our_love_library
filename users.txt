@@ -1,6 +1,5 @@
 1|admin|admin123|系统管理员|1|0
 2|student|student123|张三|0|25
-3|exploer|exploer123|探索者|0|0
 4|explorer|explorer123|探索者|0|0
 5|2025040000|123456|演示|0|1
 6|teacher|teacher123|王老师|0|5
